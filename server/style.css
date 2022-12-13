@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background: #333;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,32 @@
+<form onsubmit="login(); return false;">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <input type="submit" value="Login">
+  </form>
+  
+  <script>
+  function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+  
+    const xhr = new XMLHttpRequest();
+  
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          alert(xhr.responseText);
+        } else {
+          alert('Login failed.');
+        }
+      }
+    };
+  
+    xhr.open('GET', '/login?username=' + username + '&password=' + password);
+    xhr.send();
+  }
+  </script>
+  
