@@ -29,30 +29,7 @@ app.get('/', function(request, response) {
 	} else {
 		// response.send('Please enter Username and Password!');
 	};
-/*
-	response.send(`<!DOCTYPE html>
-<html>
-<head>
-  <title>Login Form</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-      <h1>Login Page</h1>
-<form action="/login" method="post">
-				<label for="username">
-					<!-- font awesome icon -->
-					<i class="fas fa-user"></i>
-				</label>
-				<input type="text" name="username" placeholder="Username" id="username" required>
-				<label for="password">
-					<i class="fas fa-lock"></i>
-				</label>
-				<input type="password" name="password" placeholder="Password" id="password" required>
-				<input type="submit" value="Login">
-			</form>
-</body>
-</html>`);
-*/
+
 });
 function validate(x, y) {
 	var valid = false;
